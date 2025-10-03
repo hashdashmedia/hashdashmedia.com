@@ -46,7 +46,7 @@ function Service() {
               Our Services
             </h1>
             <p className={`text-lg ${
-              isDark ? 'text-white-400' : 'text-gray-600'
+              isDark ? 'text-gray-400' : 'text-gray-600'
             }`}>
               Innovative solutions to transform your business
             </p>
@@ -83,7 +83,7 @@ function Service() {
                 className={`group relative rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 ${
                   isDark
                     ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/60 shadow-xl hover:shadow-2xl hover:shadow-purple-500/30'
-                    : 'bg-grey/80 backdrop-blur-sm border border-gray-200/50 hover:border-purple-400/60 shadow-xl hover:shadow-2xl hover:shadow-purple-300/40'
+                    : 'backdrop-blur-sm border border-gray-200/50 hover:border-purple-400/60 shadow-xl hover:shadow-2xl hover:shadow-purple-300/40'
                 }`}
               >
                 {/* Animated gradient background */}
@@ -114,18 +114,14 @@ function Service() {
                   {/* Title */}
                   <h3 className={`text-2xl font-bold mb-4 transition-all duration-300 ${
                     isDark
-                      ? 'text-white group-hover:text-purple-300'
-                      : 'text-white-900 group-hover:text-purple-600'
+                      ? 'text-black'
+                      : 'text-purple-600'
                   }`}>
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className={`text-sm leading-relaxed mb-6 flex-grow transition-colors duration-300 ${
-                    isDark
-                      ? 'text-white-400 group-hover:text-gray-300'
-                      : 'text-gray-600 group-hover:text-gray-700'
-                  }`}>
+                  <p className="text-sm leading-relaxed mb-6 flex-grow transition-colors duration-300 text-black dark:text-white" >
                     {service.description}
                   </p>
 
